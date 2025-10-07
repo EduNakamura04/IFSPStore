@@ -4,6 +4,10 @@ namespace IFSPStoreDomain.Entities
 {
     public class User : BaseEntity<int>
     {
+        public User()
+        {
+            
+        }
         public User(int id, string name, string password, string login, string email, DateTime registerdate, DateTime logindate, bool isActive) : base(id)
         {
             Name = name;

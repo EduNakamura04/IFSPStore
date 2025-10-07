@@ -4,6 +4,10 @@ namespace IFSPStoreDomain.Entities
 {
     public class Product : BaseEntity<int>
     {
+        public Product()
+        {
+            
+        }
         public Product(int id, string name, decimal price, decimal quantity, DateTime purchasedate, string salesunit, Category category) : base(id)
         {
             Name = name;

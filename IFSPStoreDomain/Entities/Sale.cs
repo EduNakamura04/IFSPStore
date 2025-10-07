@@ -4,6 +4,10 @@ namespace IFSPStoreDomain.Entities
 {
     public class Sale : BaseEntity<int>
     {
+        public Sale()
+        {
+            
+        }
         public Sale(int id, DateTime saleDate, decimal saleTotal, User salesman
             , Customer customer) : base(id)
         {
@@ -25,6 +29,10 @@ namespace IFSPStoreDomain.Entities
     }
     public class SaleItem : BaseEntity<int>
     {
+        public SaleItem()
+        {
+            
+        }
         public SaleItem(int id, Sale sale, Product product, decimal quantity, decimal unitPrice, decimal totalPrice) : base(id)
         {
             Sale = sale;
